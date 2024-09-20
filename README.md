@@ -35,7 +35,7 @@ I divided the metrics into groups:
 - Transcript metrics<br>
 "Transcripts > 500 bp", "Transcripts > 1000 bp", "Aligned", "Uniquely aligned", "Multiply aligned", "Unaligned", "Misassemblies", "Unannotated", "50%-matched", "95%-matched"
 - Scaled metrics<br>
-"Database coverage", "Avg. aligned fraction"
+"Database coverage", "Avg. aligned fraction", "Mean fraction of transcript matched"
 - Other metrics<br>
 "Transcripts", "Avg. mismatches per aligned kb", "Duplication ratio"
 
