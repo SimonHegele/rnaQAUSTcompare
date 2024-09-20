@@ -55,6 +55,8 @@ Line and bar plot for the scaled values
 
 **Example:**
 
+A comparison of three mouse transcriptome assemblies, each generated with a different tool.
+
 <p float="left">
   <img src="rnaQUAST_comparison_lines.png" width="400" />
   <img src="rnaQUAST_comparison_bars.png" width="400" /> 
