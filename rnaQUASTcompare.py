@@ -242,9 +242,7 @@ def main():
 
     # Data processing
     ValueScaler().scale(short_reports, database_metrics)
-
     
-
     # Prepare output
     out_dir = datetime.now().strftime("%dd%mm%Yy_%Hh%Mm%Ss")
     save_as = path.join(out_dir, "rnaQUAST_comparison")
@@ -257,11 +255,12 @@ def main():
     combined = DataFrame({"metric": short_reports[0]['metrics']})
     for i, sr in enumerate(short_reports):
         combined[names[i]+' (absolute)'] = sr[sr.columns[1]]
-        combined[names[i]+' (scaled)']   = sr[sr.columns[2]]   
-    combined.to_csv(save_as+".tsv", sep="\t")
-    combined.style.to_latex(save_as+".tex")
-
+        combined[names[i]+' (scaled)']   = sr[sr.columns[2]]
     print(combined)
+    combined.to_csv(save_as+".tsv", sep="\t")
+    for i in range(combined.shape[0]):
+        combined.loc[i,"metric"] = str(combined.loc[i,"metric"]).replace("%","\\%")
+    combined.style.to_latex(save_as+".tex")
     
     print("Done")
     exit(0)
