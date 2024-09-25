@@ -22,7 +22,7 @@ options:
 
 ## Value scaling
 
-Firt, found the metric "Avg. mismatches per transcripts" to favor assemblies with transcripts that are shorter or cannot be aligned as well and replaced it with "Avg. mismatches per aligned kb".
+First, found the metric "Avg. mismatches per transcripts" to favor assemblies with transcripts that are shorter or cannot be aligned as well and replaced it with "Avg. mismatches per aligned kb".
 
 Second, comparisons usually work better with relative values so all metrics were scaled to a range of [0,1] which also enables better visualization.
 
