@@ -6,6 +6,8 @@ rnaQUAST (https://github.com/ablab/rnaquast) is a great tool for the evaluation 
 It generates a multitude of metrics for the quality of transcriptome assemblies, many of them by mapping the transcripts to an annotated genome.<br>
 rnaQUAST does a great job at rating individual assemblies, however, directly comparing different reports is not as easy.
 
+This tools compares metrics from rnaQUASTs short reports.
+
 ## Usage
 
 ```
