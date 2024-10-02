@@ -64,4 +64,4 @@ A comparison of three mouse transcriptome assemblies, each generated with a diff
 
 ### 2. Dataframes
 
-Dataframe with data of all reports with absolute and scaled values both in as .tsv and in latex style.
+Dataframe with data of all reports with absolute and scaled values as .csv, .tsv and .tex.
