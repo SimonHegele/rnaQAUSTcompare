@@ -1,6 +1,6 @@
 # rnaQUASTcompare
 
-Small python command line tool that generates a comparative plot for multiple rnaQUAST short reports.<br>
+Small python command line tool that generates a comparative plots for multiple rnaQUAST short reports.<br>
 rnaQUAST (https://github.com/ablab/rnaquast) is a great tool for the evaluation of transcriptome assemblies.<br>
 
 It generates a multitude of metrics for the quality of transcriptome assemblies, many of them by mapping the transcripts to an annotated genome.<br>
