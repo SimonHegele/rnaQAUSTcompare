@@ -187,7 +187,7 @@ class Plotter():
     def add_legend(cls, axes, names, colors):
 
         handles = [patches.Rectangle([0,0],5,5,color=c) for c in colors]
-        axes.legend(handles, names, bbox_to_anchor=(-2, -0.9, 1, 1), fontsize=30)
+        axes.legend(handles, names, bbox_to_anchor=(-2.5, -0.9, 1, 1), fontsize=30)
 
     @classmethod
     def fill_plot_bars(cls, axes, short_reports, metrics, colors, scaled=False):
