@@ -65,8 +65,8 @@ A comparison of three mouse transcriptome assemblies, each generated with a diff
 </p>
 
 <p float="left">
-  <img src="rnaQUAST_comparison_absolute_lines_Gene_metrics_no_legend.png" width="400" />
-  <img src="rnaQUAST_comparison_absolute_lines_Transcripts_metrics_no_legend.png" width="400" /> 
+  <img src="rnaQUAST_comparison_absolute_lines_Gene metrics_no_legend.png" width="400" />
+  <img src="rnaQUAST_comparison_absolute_lines_Transcripts metrics_no_legend.png" width="400" /> 
 </p>
 
 ### 2. Dataframes
