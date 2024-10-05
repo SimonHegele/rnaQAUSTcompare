@@ -53,15 +53,20 @@ rnaQUASTcompare.py will generate a folder with the current date and time in the 
 
 ### 1. Plots
 
-Line and bar plot for the scaled values
+Combined plots for all metrics with scaled values and individual plots for each metrics group.
 
 **Example:**
 
 A comparison of three mouse transcriptome assemblies, each generated with a different tool.
 
 <p float="left">
-  <img src="rnaQUAST_comparison_lines.png" width="400" />
-  <img src="rnaQUAST_comparison_bars.png" width="400" /> 
+  <img src="rnaQUAST_comparison_scaled_lines.png" width="400" />
+  <img src="rnaQUAST_comparison_scaled_bars.png" width="400" /> 
+</p>
+
+<p float="left">
+  <img src="rnaQUAST_comparison_absolute_lines_Gene_metrics_no_legend.png" width="400" />
+  <img src="rnaQUAST_comparison_absolute_lines_Transcripts_metrics_no_legend.png" width="400" /> 
 </p>
 
 ### 2. Dataframes
