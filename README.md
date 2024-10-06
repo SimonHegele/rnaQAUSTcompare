@@ -46,12 +46,12 @@ A comparison of three transcriptome assembly tools from the same RNA-Seq data.
 
 <p float="left">
   <img src="output_example/rnaQUAST_comparison_absolute_lines_Gene metrics_no_legend.png" width="400" />
-  <img src="output/example/rnaQUAST_comparison_absolute_bars_Isoform metrics_no_legend.png" width="400" /> 
+  <img src="output_example/rnaQUAST_comparison_absolute_bars_Isoform metrics_no_legend.png" width="400" /> 
 </p>
 
 <p float="left">
   <img src="output_example/rnaQUAST_comparison_absolute_lines_Transcript metrics.png" width="400" />
-  <img src="output/example/rnaQUAST_comparison_absolute_bars_Other metrics.png" width="400" /> 
+  <img src="output_example/rnaQUAST_comparison_absolute_bars_Other metrics.png" width="400" /> 
 </p>
 
 **Value scaling**
