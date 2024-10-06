@@ -1,0 +1,30 @@
+	metrics	Tool 1 (absolute)	Tool 2 (absolute)	Tool 3 (absolute)
+0	Genes	40200.0	40200.0	40200.0
+1	Avg. number of exons per isoform	13.395	13.395	13.395
+2	Transcripts	509470.0	309863.0	216053.0
+3	Transcripts > 500 bp	134009.0	72591.0	92632.0
+4	Transcripts > 1000 bp	83024.0	43112.0	55844.0
+5	Aligned	509389.0	309845.0	216037.0
+6	Uniquely aligned	503529.0	307070.0	211502.0
+7	Multiply aligned	3793.0	992.0	739.0
+8	Unaligned	81.0	18.0	16.0
+9	Avg. aligned fraction	0.997	0.997	0.994
+10	Avg. alignment length	629.184	633.737	1015.557
+11	Avg. mismatches per aligned kb	0.8963991455599635	0.6595796047887373	0.7611586548071649
+12	Misassemblies	804.0	495.0	471.0
+13	Database coverage	0.215	0.167	0.196
+14	Duplication ratio	2.101	1.244	1.498
+15	50%-assembled genes	12602.0	13953.0	13457.0
+16	95%-assembled genes	5416.0	7768.0	7363.0
+17	50%-covered genes	15616.0	15318.0	15095.0
+18	95%-covered genes	7862.0	8974.0	8811.0
+19	50%-assembled isoforms	23243.0	18299.0	21938.0
+20	95%-assembled isoforms	7761.0	8488.0	9829.0
+21	50%-covered isoforms	28140.0	20380.0	24565.0
+22	95%-covered isoforms	10615.0	9813.0	11524.0
+23	Mean isoform coverage	0.561	0.528	0.591
+24	Mean isoform assembly	0.485	0.483	0.542
+25	50%-matched	164281.0	56476.0	70026.0
+26	95%-matched	114526.0	37762.0	40803.0
+27	Unannotated	305229.0	226668.0	115413.0
+28	Mean fraction of transcript matched	0.313	0.182	0.318

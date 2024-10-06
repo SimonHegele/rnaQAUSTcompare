@@ -22,11 +22,40 @@ options:
                         list of colors in hexcode (default=["auto"])
 ```
 
-## Value scaling
+## Output
 
-First, found the metric "Avg. mismatches per transcripts" to favor assemblies with transcripts that are shorter or cannot be aligned as well and replaced it with "Avg. mismatches per aligned kb".
+rnaQUASTcompare.py will generate a folder with the current date and time in the same directory.<br>
 
-Second, comparisons usually work better with relative values so all metrics were scaled to a range of [0,1] which also enables better visualization.
+
+I found the metric "Avg. mismatches per transcripts" to favor assemblies with transcripts that are shorter and replaced it with "Avg. mismatches per aligned kb".
+
+### 1. Dataframes
+
+Dataframes combining the data of all short reports in .csv, .tsv and .tex format
+
+### 2. Plots
+
+Metrics are grouped into four groups: "Gene metrics", "Transcript metrics", "Isoform metrics"<br>
+and other metrics. For each of them a bar and a line plot will be created and a bar and line<br>
+for all metrics together is created. In the comined plot all values are scaled to [0,1].<br>
+
+Combined plots for all metrics with scaled values and individual plots for each metrics group.
+
+**Example:**
+
+A comparison of three transcriptome assembly tools from the same RNA-Seq data.
+
+<p float="left">
+  <img src="output_example/rnaQUAST_comparison_absolute_lines_Gene metrics_no_legend.png" width="400" />
+  <img src="output/example/rnaQUAST_comparison_absolute_bars_Isoform metrics_no_legend.png" width="400" /> 
+</p>
+
+<p float="left">
+  <img src="output_example/rnaQUAST_comparison_absolute_lines_Transcript metrics.png" width="400" />
+  <img src="output/example/rnaQUAST_comparison_absolute_bars_Other metrics.png" width="400" /> 
+</p>
+
+**Value scaling**
 
 I divided the metrics into groups:
 
@@ -46,29 +75,3 @@ Isoforms metrics are divided by the number of isoforms in the genome annotation.
 Isoforms metrics are divided by the number of sequences in the respective assembly.<br>
 Scaled metrics are left unchanged.<br>
 Other metrics are divided by the maximum value for all assemblies.
-
-## Output
-
-rnaQUASTcompare.py will generate a folder with the current date and time in the same directory.<br>
-
-### 1. Plots
-
-Combined plots for all metrics with scaled values and individual plots for each metrics group.
-
-**Example:**
-
-A comparison of three mouse transcriptome assemblies, each generated with a different tool.
-
-<p float="left">
-  <img src="rnaQUAST_comparison_scaled_lines.png" width="400" />
-  <img src="rnaQUAST_comparison_scaled_bars.png" width="400" /> 
-</p>
-
-<p float="left">
-  <img src="rnaQUAST_comparison_absolute_lines_Gene metrics_no_legend.png" width="400" />
-  <img src="rnaQUAST_comparison_absolute_lines_Transcripts metrics_no_legend.png" width="400" /> 
-</p>
-
-### 2. Dataframes
-
-Dataframe with data of all reports with absolute and scaled values as .csv, .tsv and .tex.
