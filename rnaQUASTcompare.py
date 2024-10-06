@@ -311,6 +311,18 @@ class Plotter():
 def random_color():
         return "#" + "".join([choice("0123456789abcdef") for _ in range(6)])
 
+def save_data(dataframe, save_as):
+
+    dataframe.to_csv(save_as+".csv")
+    dataframe.to_csv(save_as+".tsv", sep="\t")
+
+    copy = dataframe.copy()
+
+    for i in range(dataframe.shape[0]):
+        copy.loc[i,"metrics"] = str(copy.loc[i,"metrics"]).replace("%","\\%")
+
+    copy.style.to_latex(save_as+".tex")
+
 def main():
 
     args = MyArgumentParser().parse_args()
@@ -329,8 +341,6 @@ def main():
         colors = [random_color() for _ in short_reports]
     else:
         if not len(args.report_dirs) == len(args.colors):
-            print(len(args.report_dirs))
-            print(len(colors))
             raise Exception("Number of colors must match number of reports")
         else:
             colors = args.colors
@@ -351,13 +361,11 @@ def main():
 
     print(combined)
 
-    combined.to_csv(save_as+".csv")
-    combined.to_csv(save_as+".tsv", sep="\t")
+    save_data(combined, save_as)
 
-    for i in range(combined.shape[0]):
-        combined.loc[i,"metrics"] = str(combined.loc[i,"metrics"]).replace("%","\\%")
+    combined = combined[[col for col in combined.columns if not "(scaled)" in col]]
 
-    combined.style.to_latex(save_as+".tex")
+    save_data(combined, save_as+"_absolute_values")
 
     # Plotting
     Plotter().generate_plots(short_reports, names, colors, save_as, database_metrics["Isoforms"])
