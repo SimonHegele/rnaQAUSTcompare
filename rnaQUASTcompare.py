@@ -23,9 +23,9 @@ transcripts_metrics = ["Transcripts > 500 bp",
                         "Multiply aligned",
                         "Unaligned",
                         "Misassemblies",
-                        "Unannotated",
                         "50%-matched",
-                        "95%-matched"]
+                        "95%-matched",
+                        "Unannotated",]
 scaled_metrics =       ["Mean fraction of transcript matched",
                         "Mean isoform assembly",
                         "Mean isoform coverage",
@@ -328,7 +328,9 @@ def main():
     if args.colors == ["auto"]:
         colors = [random_color() for _ in short_reports]
     else:
-        if not len(args.report_dirs) == len(args.names):
+        if not len(args.report_dirs) == len(args.colors):
+            print(len(args.report_dirs))
+            print(len(colors))
             raise Exception("Number of colors must match number of reports")
         else:
             colors = args.colors
