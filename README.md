@@ -81,3 +81,9 @@ Other metrics are divided by the maximum value for all assemblies.
   <img src="output_example/rnaQUAST_comparison_scaled_lines.png" width="400" />
   <img src="output_example/rnaQUAST_comparison_scaled_bars.png" width="400" /> 
 </p>
+
+## How to cite rnaQUAST compare
+
+To me it doesn't really matter if you cite this tool at all. If you think you have to or<br>
+want to make others aware of this tool you can refer directly to this repository.<br>
+I would also be very pleased if you could let me know if and how you use this tool.
