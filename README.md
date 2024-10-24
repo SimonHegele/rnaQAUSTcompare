@@ -57,8 +57,8 @@ A comparison of three transcriptome assembly tools from the same RNA-Seq data.
 </p>
 
 <p float="left">
-  <img src="output_example/rnaQUAST_comparison_scaled_lines.png" width="400" />
-  <img src="output_example/rnaQUAST_comparison_scaled_bars.png" width="400" /> 
+  <img src="output_example/rnaQUAST_comparison_scaled_lines.png" width="300" />
+  <img src="output_example/rnaQUAST_comparison_scaled_bars.png" width="300" /> 
 </p>
 
 **Value scaling**
