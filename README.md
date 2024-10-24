@@ -26,7 +26,8 @@ options:
 
 rnaQUASTcompare.py will generate a folder with the current date and time in the same directory.<br>
 
-I found the metric "Avg. mismatches per transcripts" to favor assemblies with transcripts that are shorter and replaced it with "Avg. mismatches per aligned kb".
+I found the metric "Avg. mismatches per transcripts" to favor assemblies with transcripts that are shorter<br>
+and replaced it with "Avg. mismatches per aligned kb".
 
 ### 1. Dataframes
 
@@ -35,8 +36,9 @@ Dataframes combining the data of all short reports in .csv, .tsv and .tex format
 ### 2. Plots
 
 Metrics are grouped into four groups: "Gene metrics", "Transcript metrics", "Isoform metrics"<br>
-and other metrics. For each of them a bar and a line plot will be created and a bar and line<br>
-for all metrics together is created. In the comined plot all values are scaled to [0,1].<br>
+and "Other metrics". For each of them a bar and a line plot will be created.
+Additionally a combined plot for all metrics together a bar and line plot for all metrics together is created.<br>
+In the comined plot all values are scaled to [0,1], the details of the scaling operations can be found below.<br>
 
 Combined plots for all metrics with scaled values and individual plots for each metrics group.
 
@@ -74,3 +76,8 @@ Isoforms metrics are divided by the number of isoforms in the genome annotation.
 Isoforms metrics are divided by the number of sequences in the respective assembly.<br>
 Scaled metrics are left unchanged.<br>
 Other metrics are divided by the maximum value for all assemblies.
+
+<p float="left">
+  <img src="output_example/rnaQUAST_comparison_scaled_lines.png" width="400" />
+  <img src="output_example/rnaQUAST_comparison_scaled_bars.png" width="400" /> 
+</p>
