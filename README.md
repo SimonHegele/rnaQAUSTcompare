@@ -56,6 +56,11 @@ A comparison of three transcriptome assembly tools from the same RNA-Seq data.
   <img src="output_example/rnaQUAST_comparison_absolute_bars_Other metrics_legend.png" width="300" /> 
 </p>
 
+<p float="left">
+  <img src="output_example/rnaQUAST_comparison_scaled_lines.png" width="400" />
+  <img src="output_example/rnaQUAST_comparison_scaled_bars.png" width="400" /> 
+</p>
+
 **Value scaling**
 
 I divided the metrics into groups:
@@ -76,11 +81,6 @@ Isoforms metrics are divided by the number of isoforms in the genome annotation.
 Isoforms metrics are divided by the number of sequences in the respective assembly.<br>
 Scaled metrics are left unchanged.<br>
 Other metrics are divided by the maximum value for all assemblies.
-
-<p float="left">
-  <img src="output_example/rnaQUAST_comparison_scaled_lines.png" width="400" />
-  <img src="output_example/rnaQUAST_comparison_scaled_bars.png" width="400" /> 
-</p>
 
 ## How to cite rnaQUAST compare
 
