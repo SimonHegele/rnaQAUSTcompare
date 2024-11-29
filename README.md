@@ -78,7 +78,7 @@ I divided the metrics into groups:
 
 Gene metrics are divided by the number of genes in the genome annotation<br>
 Isoforms metrics are divided by the number of isoforms in the genome annotation.<br>
-Isoforms metrics are divided by the number of sequences in the respective assembly.<br>
+Transcrpts metrics are divided by the number of sequences in the respective assembly.<br>
 Scaled metrics are left unchanged.<br>
 Other metrics are divided by the maximum value for all assemblies.
 
