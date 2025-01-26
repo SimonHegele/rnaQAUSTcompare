@@ -32,7 +32,7 @@ options:
 
 rnaQUASTcompare.py will generate a folder with the current date and time in the same directory.<br>
 
-I found the metric "Avg. mismatches per transcripts" to favor assemblies with transcripts that are shorter<br>
+I found the metric "Avg. mismatches per transcripts" to favor assemblies with transcript that are shorter<br>
 and replaced it with "Avg. mismatches per aligned kb".
 
 ### 1. Dataframes
