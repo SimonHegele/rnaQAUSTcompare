@@ -8,6 +8,12 @@ rnaQUAST does a great job at rating individual assemblies, however, directly com
 
 This tool compares metrics from rnaQUASTs short reports.
 
+## Installation
+
+`git clone https://github.com/SimonHegele/rnaQAUSTcompare`
+`cd rnaQAUSTcompare`
+`pip install .`
+
 ## Usage
 
 ```
