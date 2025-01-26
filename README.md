@@ -10,8 +10,8 @@ This tool compares metrics from rnaQUASTs short reports.
 
 ## Installation
 
-`git clone https://github.com/SimonHegele/rnaQAUSTcompare`
-`cd rnaQAUSTcompare`
+`git clone https://github.com/SimonHegele/rnaQAUSTcompare`<br>
+`cd rnaQAUSTcompare`<br>
 `pip install .`
 
 ## Usage
