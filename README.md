@@ -44,7 +44,7 @@ Dataframes combining the data of all short reports in .csv, .tsv and .tex format
 Metrics are grouped into four groups: "Gene metrics", "Transcript metrics", "Isoform metrics"<br>
 and "Other metrics". For each of them a bar and a line plot will be created.<br>
 Additionally a combined plot for all metrics together a bar and line plot for all metrics together is created.<br>
-In the comined plot all values are scaled to [0,1], the details of the scaling operations can be found below.<br>
+In the combined plot all values are scaled to [0,1], the details of the scaling operations can be found below.<br>
 
 Combined plots for all metrics with scaled values and individual plots for each metrics group.
 
