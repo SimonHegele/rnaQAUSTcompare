@@ -6,7 +6,7 @@ version='0.1',
 description='Comparing multiple transcriptome assemblies assesed by rnaQUAST',
 author='SimonHegele',
 install_requires=[
-'matplotlib'
+'matplotlib',
 'numpy',
 'pandas',
 ],
